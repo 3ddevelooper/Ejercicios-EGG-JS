@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio-25</title>
+</head>
+<style>
+   input[type="submit"], input[type="button"]{
+        cursor: pointer;
+    }
+</style>
+<body>
+    <br>
+    <form id="form1" onsubmit="getFormValores(event)">
+        Nombre: <input type="text" name="nombre"  value="David"><br><br>
+        Apellido: <input type="text" name="apellido"  value="Beckham" ><br><br>
+    
+        <input type="submit" value="Submit">
+        <input type="button" value="Reset" id="resets"></b>
+    </form>
+    <p id="mostrar">AQUI SE MOSTRARA LOS VALORES DEL FORMULARIO</p>
+    <script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>

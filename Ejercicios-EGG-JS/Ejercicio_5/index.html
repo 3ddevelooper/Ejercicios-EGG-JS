@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Ejercicio-5</title>
+</head>
+<body>
+    <h2>Calculadora</h2>
+    <ul>
+        <li>Suma</li>
+        <li>Resta</li>
+        <li>Division</li>
+        <li>Multiplicacion</li>
+    </ul><hr>
+    <div>
+        <label>Ingrese el primer numero</label><br>
+        <input type="number" name="numero1" id="numero1"/><br><br>
+        <label>Ingrese el segundo numero</label><br>
+        <input type="number" name="numero2" id="numero2"/><br><br>
+        <label>Ingrese la primera letra de la operción que desea realizar</label><br>
+        <input type="text" name="operacion" id="operacion" maxlength="1"/><br><br>
+        <button onclick="calculo()">Calcular</button>
+        <button onclick="limpiar()">Limpiar</button><hr>
+        <p id="resultado">AQUI SE MOSTRARA EL RESULTADO</p>
+    </div>
+    <script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>

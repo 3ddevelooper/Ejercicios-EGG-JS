@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejercicio-15</title>
+</head>
+
+<body>
+    <label for="nombre">CALCULAR AREA Y PERIMETRO DE UN CIRCULO</label><br><br>
+    <form onkeyup="validarInput()">
+        <label>Ingrese el radio</label><br>
+        <input type="number" name="radio" id="radio" onkeypress="enviarConEnter(event)"><br><br>
+
+        <button type="button" id="btnenviar" onclick="mostrarDatos()">Calcular</button>
+        <button type="reset" onclick="limpiar()">Limpiar</button>
+        <hr />
+    </form>
+
+    <p id="datos">AQUI SE MOSTRARA LOS RESULTADOS</p>
+
+    <script type="text/javascript" src="js/script.js"></script>
+</body>
+
+</html>

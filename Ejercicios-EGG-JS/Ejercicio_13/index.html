@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejercicio-13</title>
+  </head>
+  <body>
+
+    <label for="nombre">FORMULARIO DE INSCRIPCIÓN</label><br><br>
+    <form onchange="validarInput()" ><!--onsubmit="mostrarDatos(event)"-->
+      <label for="nombre">Ingrese su nombre</label><br>
+      <input type="text" name="nombre" id="nombre" minlength=6 maxlength=30 size="30" required><br>
+      <label for="edad">Ingrese su edad</label><br>
+      <input type="number" name="edad" id="edad" required><br>
+      <label for="sexo">Seleccione su sexo</label><br>
+      <select name="sexo" id="sexo" required>
+        <option value="nulo" disabled selected>Elija una opción</option>
+        <option value="M">Masculino</option>
+        <option value="F">Femenino</option>
+        <option value="O">Otro</option>
+      </select><br>
+      <label for="peso">Ingrese su peso</label><br>
+      <input type="text" name="peso" id="peso" required><br>
+      <label for="altura">Ingrese su altura</label><br>
+      <input type="text" name="altura" id="altura"   required><br><br>
+
+      <button type="button" id="btnenviar" onclick="mostrarDatos()" >Enviar</button>
+      <button type="reset" onclick="limpiar()">Limpiar</button>
+      <hr>
+    </form>
+
+    <p id="datos">AQUI SE MOSTRARA LOS DATOS INGRESADOS</p>
+
+
+    <script type="text/javascript" src="js/script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejercicio-14</title>
+  </head>
+  <body>
+
+    <label for="nombre">INGRESO DE LIBROS</label><br><br>
+    <form id="form1" onkeyup="validarInput()" >
+      <label for="isbn">Ingrese el ISBN</label><br>
+      <input type="number" name="isbn" id="isbn" minlength=6 maxlength=8 size="8"><br>
+      <label for="titulo">Ingrese el Título</label><br>
+      <input type="text" name="titulo" id="titulo"><br>
+      <label for="autor">Ingrese el Autor</label><br>
+      <input type="text" name="autor" id="autor"><br>
+      <label for="npaginas">Ingrese el número de Páginas</label><br>
+      <input type="number" name="npaginas" id="npaginas" ><br><br>
+
+      <button type="button" id="btnenviar" onclick="mostrarDatos()" >Guardar</button>
+      <button type="reset" onclick="limpiar()">Limpiar</button>
+      <hr>
+    </form>
+   
+    <p id="datos">AQUI SE MOSTRARA LOS DATOS INGRESADOS</p>
+
+    <script type="text/javascript" src="js/script.js"></script>
+  </body>
+</html>
